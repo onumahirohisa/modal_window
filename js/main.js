@@ -8,17 +8,17 @@
 
   open.addEventListener("click", () => {
     modal.classList.remove("hidden");
-    modal2.classList.remove("hidden");
     mask.classList.remove("hidden");
   });
 
-  //   close.addEventListener("click", () => {
-  //     modal.classList.add("hidden");
-  //     modal2.classList.add("hidden");
-  //     mask.classList.add("hidden");
-  //   });
+  close.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal2.classList.remove("hidden");
+    mask.classList.add("hidden");
+    mask2.classList.remove("hidden");
+  });
 
-  //   mask.addEventListener("click", () => {
-  //     close.click();
-  //   });
+  mask.addEventListener("click", () => {
+    close.click();
+  });
 }
