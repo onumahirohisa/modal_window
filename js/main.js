@@ -2,23 +2,23 @@
 
 {
   const open = document.getElementById("open");
-  const mask = document.getElementById("mask");
-  const modal = document.getElementById("modal");
   const close = document.getElementById("close");
+  const modal = document.getElementById("modal");
+  const mask = document.getElementById("mask");
 
   open.addEventListener("click", () => {
     modal.classList.remove("hidden");
+    modal2.classList.remove("hidden");
     mask.classList.remove("hidden");
   });
 
-  close.addEventListener("click", () => {
-    modal.classList.add("hidden");
-    mask.classList.add("hidden");
-  });
+  //   close.addEventListener("click", () => {
+  //     modal.classList.add("hidden");
+  //     modal2.classList.add("hidden");
+  //     mask.classList.add("hidden");
+  //   });
 
-  mask.addEventListener("click", () => {
-    // modal.classList.add("hidden");
-    // mask.classList.add("hidden");
-    close.click();
-  });
+  //   mask.addEventListener("click", () => {
+  //     close.click();
+  //   });
 }

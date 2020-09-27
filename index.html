@@ -4,26 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal Window2</title>
+    <title>モーダルウィンドウを作ってみよう
+    </title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
-    <section id="modal" class="hidden">
-        <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
-        <div id="close">
-            閉じる
-
-        </div>
-    </section>
-
     <div id="open">
-        詳細を見る
+        <h1>警告！！</h1>
     </div>
 
     <div id="mask" class="hidden"></div>
 
-    <script src=js/main.js></script>
+    <section id="modal" class="hidden">
+        <p>
+            危険です！！あなたは監視されています<br>
+            ただちに、自宅警備員がご自宅まで伺います
+        </p>
+        <div id="close">自宅警備員No.1『松山』に連絡する</div>
+    </section>
+
+    <section id="modal2" class="hidden">
+        <p>
+            松山の電話番号 ↓ ↓<br>
+            090-1357-3725
+        </p>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
